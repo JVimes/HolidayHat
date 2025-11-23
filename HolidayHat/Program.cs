@@ -1,13 +1,16 @@
 ﻿using System.Diagnostics;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+
+Console.OutputEncoding = Encoding.UTF8;
 
 var oldResults = ReadResultsFile();
 var newResults = AssignNewRecipients(oldResults);
 WriteResultsFile(newResults);
 ShowResultsMessage();
 
-
+Console.OutputEncoding = Encoding.UTF8;
 static Results AssignNewRecipients(Results oldResults)
 {
     Results? results = null;
@@ -78,7 +81,7 @@ void ShowResultsMessage()
 }
 
 
-enum Person { Christie, Ron, Dianne, John, Tisa }
+enum Person { Christie, Ron, Dianne, John }
 
 class Results : Dictionary<Person, Person> { }
 

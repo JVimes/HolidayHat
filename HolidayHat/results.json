@@ -1,7 +1,6 @@
 {
-  "Christie": "Tisa",
-  "Ron": "Dianne",
-  "Dianne": "Ron",
-  "John": "Christie",
-  "Tisa": "John"
+  "Christie": "Dianne",
+  "Ron": "Christie",
+  "Dianne": "John",
+  "John": "Ron"
 }
